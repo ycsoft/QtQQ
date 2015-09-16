@@ -1,0 +1,42 @@
+﻿<html>
+    <head>
+		<style>
+                .triangle-left{float:left;left:auto;max-width:300px;border:1px solid #b6b6b7; border-radius:10px;padding:15px;background:#efeff0;margin:0 0 15px 25px; position:relative; display:inline-block;box-shadow:0 4px 8px #888888;word-wrap: break-word;}
+                .recver{float:left;left:10px;position:relative;padding:0; position:relative;display:inline-block;margin:0 5px 15px 0;word-wrap: break-word;}
+                .triangle-left:before{position:absolute; content:"";display:block;}
+                .triangle-left.left:before{border-color:rgba(0, 0, 0, 0) #B6B6B7 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);border-width:8px 19px 10px 40px;border-style:solid;bottom:auto;left:-60px;top:8px;}
+		.triangle-left:after{position:absolute; content:"";display:block;}
+		.triangle-left.left:after{border-color:rgba(0, 0, 0, 0) #efeff0 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);border-width:8px 19px 10px 40px;border-style:solid;bottom:auto;left:-57px;top:8px;}
+
+                .triangle-right{float:right;max-width:300px;border:1px solid #b6b6b7;border-radius:10px;padding:15px;background:#d3edf9;position:relative;display:inline-block;margin:0 25px 15px 0;box-shadow:0 4px 8px #888888;word-wrap: break-word;}
+                .sender{float:right;position:relative;display:inline-block;margin:0 25px 15px 0;word-wrap: break-word;}
+		.triangle-right:before{position:absolute; content:"";display:block;}
+		.triangle-right.right:before{border-color:rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #B6B6B7;border-width:8px 40px 10px 19px;border-style:solid;bottom:auto;right:-60px;top:8px;}
+		.triangle-right:after{position:absolute; content:"";display:block;}
+		.triangle-right.right:after{border-color:rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d3edf9;border-width:8px 40px 10px 19px;border-style:solid;bottom:auto;right:-57px;top:8px;}
+
+		.triangle-time{text-align:center;color:#999;font-size:12px; font-family:Arial;clear:both;margin:5px 0;}
+		img{max-width:300px;margin:5px 0;}
+		</style>
+		<script language="JavaScript" >
+		function addFile()
+   		{
+       			var str = '<INPUT type="file" size="50" NAME="File">'
+       			document.getElementById("MyFile").insertAdjacentHTML("beforeEnd", str)
+			alert("hello word!")
+   		}
+		function getAll(){
+			content = document.body.innerHTML			
+		}
+		function append(){
+			var obj = document.getElementById("content");
+			obj.insertAdjacentHTML("beforeEnd","<div style='overflow:hidden;'><p class='triangle-right right'>nice</p></div>");
+		}
+		function clear(){
+			document.body.innerHTML=''
+}
+		</script>
+	</head>
+        <body id="content">
+	</body>
+</html>
